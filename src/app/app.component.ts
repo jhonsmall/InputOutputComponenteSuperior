@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'padrehijo';
+  nombre = 'Juan';
+
+  RecibiendoDePadre(data: string) {
+    console.log("Recibiendo en el component SUPERIOR");
+    console.log(data);
+    this.nombre = data;
+  }
+
 }
